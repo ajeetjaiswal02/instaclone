@@ -7,14 +7,39 @@
   height: 100vh;
 }
 
+.app_posts {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.app_postsRight {
+  margin-left: 20px;
+
+}
+
 .app_header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background-color: white;
   object-fit: contain;
   border-bottom: 1px solid lightgrey;
-  padding: 20px;
+  padding: 20px; 
+  display: flex;
+  justify-content: space-between;
+
 
 }
+
+.app_headerImage {
+  object-fit: contain;
+  flex-direction: column;
+  width: 22%;
+}
+
 .app_signup {
   display: flex;
   flex-direction: column;
+
 }
