@@ -45,6 +45,11 @@ function App() {
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
   const [user, setUser] = useState(null);
+  const [state, useState] = useState({
+  setPosts:[],
+  setOpen:false,
+  email:''
+  })
 
 
 
@@ -81,6 +86,7 @@ function App() {
     auth
     .createUserWithEmailAndPassword(email, password)
     .then((authUser) => {
+      console.log(authUser)
       return authUser.user.updateProfile({
         displayName : username
       })
