@@ -13,6 +13,7 @@ function Post({ postId, user, username, caption, imageUrl }) {
     useEffect(() => {
         let unsubscribe;
         if (postId) {
+            console.log(postId)
           unsubscribe = db
             .collection("posts")
             .doc(postId)
